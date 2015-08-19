@@ -3,6 +3,11 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Ubuntu-B.ttf">
+            <string>Ubuntu-Bold</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -15,11 +20,80 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chatstr" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNk-Nj-Kcp">
+                                <rect key="frame" x="169" y="28" width="262" height="82"/>
+                                <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="73"/>
+                                <color key="textColor" red="0.1803921568627451" green="0.92549019607843142" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5K-b0-8gh">
+                                <rect key="frame" x="172" y="447" width="257" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="257" id="JZN-aG-qQL"/>
+                                    <constraint firstAttribute="height" constant="80" id="lFK-5r-cWl"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Rectangle 1 + chat">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="sgp-1E-uFt" kind="show" id="2ic-Yr-zyX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="v5K-b0-8gh" secondAttribute="centerX" constant="-0.5" id="J50-RY-6ah"/>
+                            <constraint firstAttribute="centerX" secondItem="BNk-Nj-Kcp" secondAttribute="centerX" id="fF2-32-hdl"/>
+                            <constraint firstItem="BNk-Nj-Kcp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="gX0-oI-YDK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="v5K-b0-8gh" secondAttribute="bottom" constant="73" id="yzl-hz-Ecj"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Pick Username View Controller-->
+        <scene sceneID="75E-Ra-Voj">
+            <objects>
+                <viewController id="sgp-1E-uFt" customClass="PickUsernameViewController" customModule="SouthApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ucJ-60-nxD"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tn1-oP-LfI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fwf-zU-2Ea">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="hp4-zy-1MC" kind="show" identifier="usernameToPicture" id="c7d-P3-T2q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oD7-Xw-rqh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="985" y="315"/>
+        </scene>
+        <!--Upload Picture View Controller-->
+        <scene sceneID="gaa-Er-wcI">
+            <objects>
+                <viewController id="hp4-zy-1MC" customClass="UploadPictureViewController" customModule="SouthApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d64-3Z-g4E"/>
+                        <viewControllerLayoutGuide type="bottom" id="PhN-NT-U5E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ji3-cb-UgW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8JN-DX-nTM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1646" y="315"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Rectangle 1 + chat" width="356" height="110"/>
+    </resources>
 </document>

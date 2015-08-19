@@ -13,6 +13,8 @@
 		D0FA77381B8517740088ED64 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0FA77371B8517740088ED64 /* Images.xcassets */; };
 		D0FA773B1B8517740088ED64 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0FA77391B8517740088ED64 /* LaunchScreen.xib */; };
 		D0FA77471B8517740088ED64 /* SouthAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FA77461B8517740088ED64 /* SouthAppTests.swift */; };
+		D0FA77541B8532600088ED64 /* PickUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FA77531B8532600088ED64 /* PickUsernameViewController.swift */; };
+		D0FA77581B8537470088ED64 /* UploadPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FA77571B8537470088ED64 /* UploadPictureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,10 @@
 		D0FA77401B8517740088ED64 /* SouthAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SouthAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FA77451B8517740088ED64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0FA77461B8517740088ED64 /* SouthAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouthAppTests.swift; sourceTree = "<group>"; };
+		D0FA77511B851C3D0088ED64 /* Ubuntu-L.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-L.ttf"; sourceTree = "<group>"; };
+		D0FA77521B852E780088ED64 /* Ubuntu-B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-B.ttf"; sourceTree = "<group>"; };
+		D0FA77531B8532600088ED64 /* PickUsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickUsernameViewController.swift; sourceTree = "<group>"; };
+		D0FA77571B8537470088ED64 /* UploadPictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadPictureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +85,12 @@
 			children = (
 				D0FA77301B8517740088ED64 /* AppDelegate.swift */,
 				D0FA77321B8517740088ED64 /* ViewController.swift */,
+				D0FA77531B8532600088ED64 /* PickUsernameViewController.swift */,
+				D0FA77571B8537470088ED64 /* UploadPictureViewController.swift */,
 				D0FA77341B8517740088ED64 /* Main.storyboard */,
 				D0FA77371B8517740088ED64 /* Images.xcassets */,
 				D0FA77391B8517740088ED64 /* LaunchScreen.xib */,
+				D0FA77501B851C300088ED64 /* Resources */,
 				D0FA772E1B8517740088ED64 /* Supporting Files */,
 			);
 			path = SouthApp;
@@ -110,6 +119,15 @@
 				D0FA77451B8517740088ED64 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0FA77501B851C300088ED64 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D0FA77511B851C3D0088ED64 /* Ubuntu-L.ttf */,
+				D0FA77521B852E780088ED64 /* Ubuntu-B.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +230,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0FA77581B8537470088ED64 /* UploadPictureViewController.swift in Sources */,
 				D0FA77331B8517740088ED64 /* ViewController.swift in Sources */,
+				D0FA77541B8532600088ED64 /* PickUsernameViewController.swift in Sources */,
 				D0FA77311B8517740088ED64 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
