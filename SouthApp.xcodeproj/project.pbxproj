@@ -365,6 +365,7 @@
 				INFOPLIST_FILE = SouthApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "29df6d32-927b-4aaa-9453-236429723e73";
 			};
 			name = Debug;
 		};
@@ -375,6 +376,7 @@
 				INFOPLIST_FILE = SouthApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "29df6d32-927b-4aaa-9453-236429723e73";
 			};
 			name = Release;
 		};
@@ -431,6 +433,7 @@
 				D0FA774C1B8517740088ED64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0FA774D1B8517740088ED64 /* Build configuration list for PBXNativeTarget "SouthAppTests" */ = {
 			isa = XCConfigurationList;
@@ -439,6 +442,7 @@
 				D0FA774F1B8517740088ED64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
